@@ -1,0 +1,10 @@
+*.pyc
+*.pyo
+*.orig
+*.log
+*.sublime-*
+.coverage
+.project
+.pydevproject
+.pydevproject.bak
+*.egg-info
