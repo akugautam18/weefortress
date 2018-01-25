@@ -8,7 +8,7 @@ from django.template.loader import get_template
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>this is my first app</h1>")
+    return render(request, 'index.html', {})
 
 
 def team_detail(request,team_id):
@@ -16,6 +16,4 @@ def team_detail(request,team_id):
 
 
 def test(request):
-    temp = get_template('test.html')
-    response = temp.render()
-    return HttpResponse(response)
+    return render(request, 'test.html', {})
