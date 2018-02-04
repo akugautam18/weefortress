@@ -17,3 +17,6 @@ def team_detail(request,team_id):
 
 def test(request):
     return render(request, 'test.html', {})
+
+def blog(request):
+    return render(request,'blog.html',{})    
