@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^gm_d/(?P<team_id>[0-9]+)/$', views.team_detail, name='game_detail'),
     url(r'^test/$', views.test, name='test'),
     url(r'^blog/$', views.blog, name='blog'),
+    url(r'^contact/$', views.contact, name='contact'),
 ]
