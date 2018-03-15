@@ -1,84 +1,160 @@
 {% load staticfiles %}
-
 <!doctype html>
-<html class="no-js" lang=""> 
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
     <head>
+
+        <!-- Basic -->
+        <title>Weefort | Home</title>
+
+        <!-- Define Charset -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Hosting One Page Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <!--<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>-->
-        <link rel="stylesheet" href="{% static 'css/fonticons.css' %}">
-        <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
-        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+        <!-- Responsive Metatag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Page Description and Author -->
+        <meta name="description" content="Sulfur - Responsive HTML5 Template">
+        <meta name="author" content="Shahriyar Ahmed">
+
+        <!-- Bootstrap CSS  -->
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" type="text/css">
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}" type="text/css">
+
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}" type="text/css">
+        
+        <!-- Css3 Transitions Styles  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+        
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/lightbox.css' %}">
+
+        <!-- Sulfur CSS Styles  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+        <!-- Responsive CSS Style -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
 
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="{% static 'css/plugins.css' %}" />
+        <script src="{% static 'js/modernizrr.js'%} "></script>
 
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
-
-        <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
     </head>
+
     <body>
-       
-		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
-        <!--Home page style-->
-        <header id="main_menu" class="header">
-            <div class="main_menu_bg navbar-fixed-top">
+    
+        <header class="clearfix">
+        
+            <!-- Start Top Bar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-bar">
+                            <div class="row">
+                                    
+                                <div class="col-md-6">
+                                    <!-- Start Contact Info -->
+                                    <ul class="contact-details">
+                                        <li><a href="#"><i class="fa fa-phone"></i> +91987654321</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-envelope-o"></i> support@weefort.tf</a>
+                                        </li> 
+                                    </ul>
+                                    <!-- End Contact Info -->
+                                </div><!-- .col-md-6 -->
+                                
+                                <div class="col-md-6">
+                                    <!-- Start Social Links -->
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="#"><i class="fa fa-rss"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-flickr"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-skype"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Social Links -->
+                                </div><!-- .col-md-6 -->
+                            </div>
+                                
+                                
+                        </div>
+                    </div>                        
+
+                </div><!-- .row -->
+            </div><!-- .container -->
+            <!-- End Top Bar -->
+        
+            <!-- Start  Logo & Naviagtion  -->
+            <div class="navbar navbar-default navbar-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="nave_menu wow fadeInDown" data-wow-duration="1s">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-										
-                                        <a class="navbar-brand" href="#">Brand</a>
-                                    </div>
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li><a href="#home">Home</a></li>
-											<li class="dropdown">
-											  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plans and Services <span class="caret"></span></a>
-											  <ul class="dropdown-menu">
-												<li><a href="#">Dedicated</a></li>
-												<li><a href="#">Servers</a></li>
-												<li><a href="#">VPS Servers</a></li>
-												<li><a href="#">Shared Hosting</a></li>
-												<li><a href="#">Colocation</a></li>
-											  </ul>
-											</li>
-                                            <li><a href="#pricing">Infrastructure</a></li>
-                                            <li><a href="#myworks">News</a></li>
-                                            <li><a href="#about">About</a></li>
-                                            <li><a href="#callus">Support</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>	
+                    <div class="navbar-header">
+                        <!-- Stat Toggle Nav Link For Mobiles -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!-- End Toggle Nav Link For Mobiles -->
+                        <a class="navbar-brand" href="/tf2/">Weefort</a>
                     </div>
-
+                    <div class="navbar-collapse collapse">
+                        
+                        <!-- Start Navigation List -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="active" href="/tf2/">Home</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'about' %}">About Us</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'service' %}">Service</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'portfolio' %}">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'blog' %}">Blog</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="blog-item.html">Item Page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'contact' %}">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- End Navigation List -->
+                    </div>
                 </div>
-
             </div>
-        </header> <!--End of header -->
+            <!-- End Header Logo & Naviagtion -->
+            
+        </header>
